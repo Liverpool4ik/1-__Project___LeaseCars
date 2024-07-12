@@ -10,6 +10,7 @@ const swiper = new Swiper(".swiper", {
 	},
 	effect: "fade", // <<<====== SOME Effects
 
+	// =====>>>>>  If we need AutoPlay <<=====
 	autoplay: {
 		delay: 3000,
 		disableOnInteraction: false,
@@ -21,7 +22,7 @@ const swiper = new Swiper(".swiper", {
 	// },
 
 	//=====>>>>>  And if we need scrollbar <<<<=====
-	// scrollbar: {
-	// 	el: ".swiper-scrollbar",
-	// },
+	scrollbar: {
+		el: ".swiper-scrollbar",
+	},
 });
