@@ -238,10 +238,14 @@ body {
 	max-height: 20px;
 }
 .why-lease__item-text {
-	text-align: left;
+	/* text-align: left; */
 }
 .how-work__title {
 	line-height: 1;
+}
+
+.how-work {
+	padding-bottom: 150px;
 }
 
 .how-work__inner {
@@ -253,11 +257,31 @@ body {
 	padding-bottom: 50px;
 }
 .how-work__subtitle {
-	line-height: 1;
+	/* line-height: 1; */
 	font-size: 24px;
 }
 .how-work__list {
 	padding-bottom: 70px;
+	counter-reset: myCounter;
 }
 .how-work__list-item {
+	list-style-type: none;
+	width: 270px;
+}
+
+.how-work__list-item::before {
+	counter-increment: myCounter;
+	content: counter(myCounter);
+	width: 100px;
+	height: 100px;
+	color: #fff;
+	font-weight: 700px;
+	font-size: 48px;
+	background-color: blue;
+	padding: 20px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 20px;
 }
